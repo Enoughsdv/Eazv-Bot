@@ -47,8 +47,7 @@ module.exports = async (client, member) => {
   const attach = new Discord.MessageAttachment(canvas.toBuffer(), "welcome.gif");
 
   /////////////////////////////////////////////////////////
-
-  /////////////////// LOG
+  
   function formatDate(template, date) {
     const specs = "YYYY:MM:DD:HH:mm:ss".split(":");
     date = new Date(date || Date.now() - new Date().getTimezoneOffset() * 6e4);
