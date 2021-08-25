@@ -14,15 +14,7 @@ module.exports = (client) => {
   }, 10000);
 
   client.guilds.cache
-<<<<<<< HEAD
-    .get("GUILD ID")
-    .channels.cache.get("CHANNEL ID")
-    .setName(
-      "🎮 | Users: " + client.guilds.cache.get("GUILD ID").memberCount
-    );
-=======
     .get(client.config.guildID)
     .channels.cache.get(client.config.countPlayers)
     .setName("🎮 | Users: " + client.guilds.cache.get(client.config.guildID).memberCount);
->>>>>>> Fixing bugs v3
 };

@@ -1,9 +1,5 @@
 module.exports = (client, message) => {
-<<<<<<< HEAD
-  let RegMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
-=======
   const RegMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
->>>>>>> Fixing bugs v3
 
   if (!message.content.startsWith(client.config.prefix)) return;
   if (message.author.bot) return;
@@ -21,11 +17,7 @@ module.exports = (client, message) => {
     .split(/ +/g);
   const command = args.shift().toLowerCase();
 
-<<<<<<< HEAD
-  let cmd = client.commands.get(command);
-=======
   const cmd = client.commands.get(command);
->>>>>>> Fixing bugs v3
   if (!cmd) return;
 
   cmd(client, message, args);

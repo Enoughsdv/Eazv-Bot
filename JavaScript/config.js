@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-let config = {
-  token: "TOKEN",
-  prefix: "ev!",
-  logChannel: "LOG CHANNEL ID",
-  suggestChannel: "SUGGEST CHANNEL ID"
-=======
 const config = {
   token: "TOKEN",
   prefix: "ev!",
@@ -25,7 +18,6 @@ const config = {
   suggestChannel: "CHANNEL ID",
   countPlayers: "CHANNEL ID",
   guildID: "GUILD ID"
->>>>>>> Fixing bugs v3
 };
 
 module.exports = config;
