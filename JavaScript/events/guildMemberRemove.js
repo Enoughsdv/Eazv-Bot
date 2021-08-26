@@ -17,8 +17,13 @@ module.exports = async (client, member) => {
   ctx.fillStyle = "#fff";
   ctx.textAlign = "center";
   ctx.textBaselin = "hanging";
-  ctx.fillText(`See you later ${member.user.username}`, canvas.width / 2, 295);
-  ctx.fillText(`We are currently ${guild.memberCount} members`, canvas.width / 2, 337);
+
+  //1st Line
+  ctx.fillText(client.config.leave1sLine.replace("{member}", member.user.username).replace("{count}", guild.memberCount), canvas.width / 2, 295);
+  
+  //2nd Line
+  ctx.fillText(client.config.leave2dLine.replace("{member}", member.user.username).replace("{count}", guild.memberCount), canvas.width / 2, 337);
+
   const y = 70,
     radio = 85,
     x = canvas.width / 2 - radio;
