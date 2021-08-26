@@ -9,7 +9,7 @@ More updates coming soon, invitation from [Eazv Development](discord.gg/TxT6zsJC
 - "Basic utility commands"
 - "Clean and readable code"
 
-##Dependencies:
+## Dependencies:
 - Canvas
 - Quick.db
 
