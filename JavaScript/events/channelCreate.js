@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 
-module.exports = async (client, channel) => { 
+module.exports = async (client, channel) => {
+
+    if(channel.type === "dm") return;
+
     const logEmbed = new Discord.MessageEmbed()
         .setTitle("Log Channel Create")
         .addField("Channel Name:", channel.name)
