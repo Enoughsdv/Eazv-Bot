@@ -1,4 +1,5 @@
 # Eazv Development BOT
+To make it a bit easier for the visitor, you can configure most things in "config.js".  
 More updates coming soon, invitation from [Eazv Development](discord.gg/TxT6zsJCa2)
 
 ## Features:
