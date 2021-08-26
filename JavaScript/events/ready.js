@@ -1,8 +1,8 @@
 module.exports = (client) => {
-  const states = ["Eazv Development", "Supporting", "github.com/Enoughsdv"];
+  const status = ["Eazv Development", "Supporting", "github.com/Enoughsdv"];
 
   setInterval(() => {
-    let index = states[Math.floor(states.length * Math.random())];
+    let index = status[Math.floor(status.length * Math.random())];
 
     client.user.setPresence({
       status: "dnd",
