@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 
+
 module.exports = async (client, message, args) => {
   const contentSuggest = args.join(" ");
   const sendChannel = client.channels.cache.get(client.config.suggestChannel);
@@ -22,4 +23,4 @@ module.exports = async (client, message, args) => {
     await msg.react(`<a:check:797566017705607238>`);
     await msg.react(`<a:deny:797566017668513843>`);
   });
-};
+}

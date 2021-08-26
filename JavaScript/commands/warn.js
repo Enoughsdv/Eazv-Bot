@@ -16,7 +16,7 @@ module.exports = async (client, message, args) => {
     db.add(`warns_${member.id}`, 1);
 
     if(get_warns < 5) {
-        
+
         const embed = new Discord.MessageEmbed()
         .setTitle("Warning information - " + member.tag)
         .setThumbnail(member.displayAvatarURL({ dynamic: true}))

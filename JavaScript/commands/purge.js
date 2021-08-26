@@ -30,4 +30,4 @@ module.exports = async (client, message, args) => {
         .setColor("RED");
       message.channel.send(errorEmbed);
     });
-};
+}

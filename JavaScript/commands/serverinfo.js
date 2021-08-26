@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports = async (client, message, args) => {
+
   const server = message.guild;
   const serverEmbed = new Discord.MessageEmbed()
     .setThumbnail(server.iconURL())
@@ -12,4 +13,4 @@ module.exports = async (client, message, args) => {
     .setColor("BLUE");
 
   message.channel.send(serverEmbed);
-};
+}

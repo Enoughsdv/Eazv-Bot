@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports = async (client, message, args) => {
+
   const member = message.mentions.users.first() || message.author;
   const embed = new Discord.MessageEmbed()
 
