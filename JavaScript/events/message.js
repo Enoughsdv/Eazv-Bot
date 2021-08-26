@@ -1,8 +1,9 @@
 module.exports = (client, message) => {
+
   const RegMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
 
-  if (!message.content.startsWith(client.config.prefix)) return;
   if (message.author.bot) return;
+  if(messahe.channel.type === "dm") return;
 
   if (message.content.match(RegMention)) {
     message.delete();
@@ -10,6 +11,8 @@ module.exports = (client, message) => {
       msg.delete({ timeout: 4000 });
     });
   }
+
+  if(!message.content.startsWith(client.config.prefix)) return;
 
   const args = message.content
     .slice(client.config.prefix.length)

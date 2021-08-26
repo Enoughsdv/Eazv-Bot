@@ -12,10 +12,11 @@ module.exports = async (client, message, args) => {
     if(!reason) reason = "No reason";
 
     const get_warns = db.get(`warns_${member.id}`);
-    
+
     db.add(`warns_${member.id}`, 1);
 
     if(get_warns < 5) {
+        
         const embed = new Discord.MessageEmbed()
         .setTitle("Warning information - " + member.tag)
         .setThumbnail(member.displayAvatarURL({ dynamic: true}))
@@ -24,6 +25,7 @@ module.exports = async (client, message, args) => {
         .addField("Staff:", message.author, true)
         .addField("ID Target:", member.id, true)
         .addField("Target:", member.tag, true)
+        .setFooter(message.guild, message.guild.iconURL())
         .setColor("RED")
 
         message.channel.send(embed);
@@ -39,6 +41,7 @@ module.exports = async (client, message, args) => {
         .setColor("RED")
 
         client.channels.cache.get(client.config.staffLogChannel).send(logEmbed);
+
     } else {
 
         const logEmbed = new Discord.MessageEmbed()

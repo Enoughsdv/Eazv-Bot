@@ -17,6 +17,7 @@ module.exports = async (client, message, args) => {
     .addField("Staff:", message.author, true)
     .addField("ID Target:", member.id, true)
     .addField("Target:", member.tag, true)
+    .setFooter(message.guild, message.guild.iconURL())
     .setColor("AQUA")
 
     message.channel.send(logEmbed);
