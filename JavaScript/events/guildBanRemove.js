@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 module.exports = async (client, guild, user) => { 
-    let logEmbed = new Discord.MessageEmbed()
+    const logEmbed = new Discord.MessageEmbed()
         .setTitle("Log UnBan User")
         .setThumbnail(user.displayAvatarURL({ dynamic: true}))
         .addField("User:", user)

@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 module.exports = async (client, oldChannel, newChannel) => { 
 
     if (oldChannel.name !== newChannel.name) {
-        let logEmbed = new Discord.MessageEmbed()
+        const logEmbed = new Discord.MessageEmbed()
             .setTitle("Log Channel Update")
             .addField("Old Name:", oldChannel.name)
             .addField("New Name:", newChannel.name)
@@ -15,7 +15,7 @@ module.exports = async (client, oldChannel, newChannel) => {
     }
 
     if (oldChannel.nsfw !== newChannel.nsfw) {
-        let logEmbed = new Discord.MessageEmbed()
+        const logEmbed = new Discord.MessageEmbed()
             .setTitle("Log Channel Update")
             .addField(`Channel: **${newChannel.name}**`, "is NSFW: ``" + newChannel.nsfw + "``")
             .setColor("YELLOW")
