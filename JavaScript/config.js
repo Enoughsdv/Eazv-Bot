@@ -20,6 +20,7 @@ const config = {
   leave2dLine: "We are currently {count} members", //Only available {member}, {count}
 
   //other
+  staffLogChannel: "CHANNEL ID",
   logChannel: "CHANNEL ID",
   suggestChannel: "CHANNEL ID",
   countPlayers: "CHANNEL ID",
