@@ -9,6 +9,10 @@ More updates coming soon, invitation from [Eazv Development](discord.gg/TxT6zsJC
 - "Basic utility commands"
 - "Clean and readable code"
 
+##Dependencies:
+- Canvas
+- Quick.db
+
 ## Installation
 In order to run the bot, you need as a dependency [Nodejs](https://nodejs.org), you need to have the intents active and know the basics of Discordjs and JavaScript.
 I forgot one important thing, you need the ``Yusei`` font.
