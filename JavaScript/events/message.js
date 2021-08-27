@@ -3,7 +3,7 @@ module.exports = (client, message) => {
   const RegMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
 
   if (message.author.bot) return;
-  if(messahe.channel.type === "dm") return;
+  if(message.channel.type === "dm") return;
 
   if (message.content.match(RegMention)) {
     message.delete();
