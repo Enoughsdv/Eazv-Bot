@@ -11,7 +11,7 @@ module.exports = async (client, message, args) => {
     return message.channel.send(noN);
   }
 
-  const number = args[0];
+  let number = args[0];
   if (isNaN(number))
     return message.channel.send("You need to enter numbers, not letters or symbols.");
 
