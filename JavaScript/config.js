@@ -8,16 +8,16 @@ const config = {
   circleImageWelcome: "#fff",
   userJoinRole: "ID ROLE",
 
-  welcome1sLine: "Welcome {member} to Eazv.", //Only available {member}, {count}
-  welcome2dLine: "We are currently {count} members",  //Only available {member}, {count}
+  welcome1sLine: "Welcome {member} to Eazv.", //Only available {member}, {member.tag}, {count}
+  welcome2dLine: "We are currently {count} members",  //Only available {member}, {member.tag}, {count}
 
   //Leave Settings
   leaveChannel: "CHANNEL ID",
   backgroundLeaveLink: "URL",
   circleImageLeave: "#fff",
 
-  leave1sLine: "See you later {member}", //Only available {member}, {count}
-  leave2dLine: "We are currently {count} members", //Only available {member}, {count}
+  leave1sLine: "See you later {member}", //Only available {member}, {member.tag}, {count}
+  leave2dLine: "We are currently {count} members", //Only available {member}, {member.tag}, {count}
 
   //other
   staffLogChannel: "CHANNEL ID",
@@ -27,4 +27,4 @@ const config = {
   guildID: "GUILD ID"
 };
 
-module.exports = config;
+module.exports = config

@@ -22,9 +22,9 @@ module.exports = async (client, member) => {
   ctx.textBaselin = "hanging";
 
   //1 line
-  ctx.fillText(client.config.welcome1sLine.replace("{member}", member.user.username).replace("{count}", guild.memberCount), canvas.width/2, 295)
+  ctx.fillText(client.config.welcome1sLine.replace("{member}", member.user.username).replace("{member.tag}", member.user.tag).replace("{count}", guild.memberCount), canvas.width/2, 295)
   //2 line
-  ctx.fillText(client.config.welcome2dLine.replace("{member}", member.user.username).replace("{count}", guild.memberCount), canvas.width/2, 337)
+  ctx.fillText(client.config.welcome2dLine.replace("{member}", member.user.username).replace("{member.tag}", member.user.tag).replace("{count}", guild.memberCount), canvas.width/2, 337)
 
   const y = 70, radio = 85, x = canvas.width / 2 - radio;
   ctx.beginPath();

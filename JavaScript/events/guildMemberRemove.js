@@ -19,10 +19,10 @@ module.exports = async (client, member) => {
   ctx.textBaselin = "hanging";
 
   //1st Line
-  ctx.fillText(client.config.leave1sLine.replace("{member}", member.user.username).replace("{count}", guild.memberCount), canvas.width / 2, 295);
+  ctx.fillText(client.config.leave1sLine.replace("{member}", member.user.username).replace("{member.tag}", member.user.tag).replace("{count}", guild.memberCount), canvas.width / 2, 295);
   
   //2nd Line
-  ctx.fillText(client.config.leave2dLine.replace("{member}", member.user.username).replace("{count}", guild.memberCount), canvas.width / 2, 337);
+  ctx.fillText(client.config.leave2dLine.replace("{member}", member.user.username).replace("{member.tag}", member.user.tag).replace("{count}", guild.memberCount), canvas.width / 2, 337);
 
   const y = 70,
     radio = 85,
